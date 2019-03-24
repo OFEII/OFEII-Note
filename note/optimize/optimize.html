@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>性能优化 | 💎OFEII Note</title>
+    <meta name="description" content="OFEII的笔记作品收藏等">
+    <link rel="icon" href="/OFEII-Note/home1.ico">
+  <link rel="manifest" href="/OFEII-Note/manifest.json">
+  <meta name="theme-color" content="#3eaf7c">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <link rel="apple-touch-icon" href="home1.ico">
+  <link rel="mask-icon" href="home1.ico" color="#3eaf7c">
+  <meta name="msapplication-TileImage" content="home1.ico">
+  <meta name="msapplication-TileColor" content="#000000">
+    
+    <link rel="preload" href="/OFEII-Note/assets/css/0.styles.35aa3fd2.css" as="style"><link rel="preload" href="/OFEII-Note/assets/js/app.b2e57c85.js" as="script"><link rel="preload" href="/OFEII-Note/assets/js/37.51154014.js" as="script"><link rel="prefetch" href="/OFEII-Note/assets/js/10.857a1d9c.js"><link rel="prefetch" href="/OFEII-Note/assets/js/11.6fe75b28.js"><link rel="prefetch" href="/OFEII-Note/assets/js/12.6db9fd57.js"><link rel="prefetch" href="/OFEII-Note/assets/js/13.c652824f.js"><link rel="prefetch" href="/OFEII-Note/assets/js/14.cee86c9a.js"><link rel="prefetch" href="/OFEII-Note/assets/js/15.95a8c1d6.js"><link rel="prefetch" href="/OFEII-Note/assets/js/16.f5e3f5fa.js"><link rel="prefetch" href="/OFEII-Note/assets/js/17.ac9d7db6.js"><link rel="prefetch" href="/OFEII-Note/assets/js/18.337d3dc3.js"><link rel="prefetch" href="/OFEII-Note/assets/js/19.094b16d0.js"><link rel="prefetch" href="/OFEII-Note/assets/js/2.aa6679b2.js"><link rel="prefetch" href="/OFEII-Note/assets/js/20.a7044630.js"><link rel="prefetch" href="/OFEII-Note/assets/js/21.f3973c76.js"><link rel="prefetch" href="/OFEII-Note/assets/js/22.15413560.js"><link rel="prefetch" href="/OFEII-Note/assets/js/23.0ac99f0d.js"><link rel="prefetch" href="/OFEII-Note/assets/js/24.1052dd90.js"><link rel="prefetch" href="/OFEII-Note/assets/js/25.658c7ace.js"><link rel="prefetch" href="/OFEII-Note/assets/js/26.adb4da0e.js"><link rel="prefetch" href="/OFEII-Note/assets/js/27.f46dba94.js"><link rel="prefetch" href="/OFEII-Note/assets/js/28.6162d905.js"><link rel="prefetch" href="/OFEII-Note/assets/js/29.e1c3eb22.js"><link rel="prefetch" href="/OFEII-Note/assets/js/3.9d4b450a.js"><link rel="prefetch" href="/OFEII-Note/assets/js/30.619c9e73.js"><link rel="prefetch" href="/OFEII-Note/assets/js/31.ccfba318.js"><link rel="prefetch" href="/OFEII-Note/assets/js/32.f7a54837.js"><link rel="prefetch" href="/OFEII-Note/assets/js/33.b2d4ba4a.js"><link rel="prefetch" href="/OFEII-Note/assets/js/34.b69a2c60.js"><link rel="prefetch" href="/OFEII-Note/assets/js/35.83eebef6.js"><link rel="prefetch" href="/OFEII-Note/assets/js/36.363e8987.js"><link rel="prefetch" href="/OFEII-Note/assets/js/38.13a66d58.js"><link rel="prefetch" href="/OFEII-Note/assets/js/39.b17b5b75.js"><link rel="prefetch" href="/OFEII-Note/assets/js/4.1dcb59de.js"><link rel="prefetch" href="/OFEII-Note/assets/js/40.2ff3a561.js"><link rel="prefetch" href="/OFEII-Note/assets/js/41.426cca0c.js"><link rel="prefetch" href="/OFEII-Note/assets/js/42.cd8b58b9.js"><link rel="prefetch" href="/OFEII-Note/assets/js/43.3238376e.js"><link rel="prefetch" href="/OFEII-Note/assets/js/44.5a068fe6.js"><link rel="prefetch" href="/OFEII-Note/assets/js/45.34fe6983.js"><link rel="prefetch" href="/OFEII-Note/assets/js/46.a215f544.js"><link rel="prefetch" href="/OFEII-Note/assets/js/5.793c30e9.js"><link rel="prefetch" href="/OFEII-Note/assets/js/6.84f5b1f0.js"><link rel="prefetch" href="/OFEII-Note/assets/js/7.ff55a58a.js"><link rel="prefetch" href="/OFEII-Note/assets/js/8.ca70a968.js"><link rel="prefetch" href="/OFEII-Note/assets/js/9.e15c6826.js">
+    <link rel="stylesheet" href="/OFEII-Note/assets/css/0.styles.35aa3fd2.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/OFEII-Note/" class="home-link router-link-active"><!----> <span class="site-name">💎OFEII Note</span></a> <div class="links" style="max-width:nullpx;"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/OFEII-Note/note/" class="nav-link router-link-active">🌳笔记</a></div><div class="nav-item"><a href="/OFEII-Note/demo/" class="nav-link">🍖作品</a></div><div class="nav-item"><a href="/OFEII-Note/collection/" class="nav-link">🍩收藏</a></div><div class="nav-item"><a href="/OFEII-Note/resume/" class="nav-link">😎resume</a></div> <a href="https://github.com/OFEII/OFEII-Note" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/OFEII-Note/note/" class="nav-link router-link-active">🌳笔记</a></div><div class="nav-item"><a href="/OFEII-Note/demo/" class="nav-link">🍖作品</a></div><div class="nav-item"><a href="/OFEII-Note/collection/" class="nav-link">🍩收藏</a></div><div class="nav-item"><a href="/OFEII-Note/resume/" class="nav-link">😎resume</a></div> <a href="https://github.com/OFEII/OFEII-Note" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <ul class="sidebar-links"><li><div class="sidebar-group first collapsable"><p class="sidebar-heading"><span>JavaScript</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>CSS</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading open"><span>性能优化</span> <span class="arrow down"></span></p> <ul class="sidebar-group-items"><li><a href="/OFEII-Note/note/optimize/optimize.html" class="active sidebar-link">性能优化</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/OFEII-Note/note/optimize/optimize.html#yoho-optimizion-雅虎军规" class="sidebar-link">yoho optimizion(雅虎军规)</a></li><li class="sidebar-sub-header"><a href="/OFEII-Note/note/optimize/optimize.html#css优化" class="sidebar-link">CSS优化</a></li><li class="sidebar-sub-header"><a href="/OFEII-Note/note/optimize/optimize.html#首屏图片加载" class="sidebar-link">首屏图片加载</a></li><li class="sidebar-sub-header"><a href="/OFEII-Note/note/optimize/optimize.html#延迟加载（懒加载）" class="sidebar-link">延迟加载（懒加载）</a></li><li class="sidebar-sub-header"><a href="/OFEII-Note/note/optimize/optimize.html#服务器端渲染-用户首屏时间优化" class="sidebar-link">服务器端渲染.用户首屏时间优化</a></li><li class="sidebar-sub-header"><a href="/OFEII-Note/note/optimize/optimize.html#性能优化的方法" class="sidebar-link">性能优化的方法</a></li></ul></li></ul></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>HTML</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>编程题</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>ES6</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>浏览器</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>VUE</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>WEB网络</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>算法排序</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>Node.js</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>Other</span> <span class="arrow right"></span></p> <!----></div></li></ul> </div> <div class="page"> <div class="content"><h1 id="性能优化"><a href="#性能优化" aria-hidden="true" class="header-anchor">#</a> 性能优化</h1> <h2 id="yoho-optimizion-雅虎军规"><a href="#yoho-optimizion-雅虎军规" aria-hidden="true" class="header-anchor">#</a> yoho optimizion(雅虎军规)</h2> <div class="language-md extra-class"><pre class="language-md"><code>网络部分
+尽量减少HTTP请求数
+合并文件
+雪碧图
+小图Base64
+减少DNS查找
+开启DNS预解析
+使用CND静态资源服务器
+避免重定向
+杜绝404
+
+缓存
+配置ETags
+实体标签（ETags），是服务器和浏览器用来决定浏览器缓存中组件与源服务器中的组件是否匹配的一种机制
+添上Expires或者Cache-Control HTTP头
+使用外链的方式引入JS和CSS（缓存）
+
+内容部分
+按需加载组件
+预加载组件
+减少DOM元素的数量
+尽量少用iframe
+压缩JavaScript和CSS（代码层面）
+
+CSS 部分
+避免使用CSS表达式
+选择<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>link</span><span class="token punctuation">&gt;</span></span>而不是@import
+避免使用滤镜
+把样式表放在顶部
+
+JS 部分
+把脚本放在底部
+去除重复脚本
+减少DOM访问
+
+图片部分
+选用合适的图片格式
+雪碧图中间少留空白
+不要用HTML缩放图片，要小图就去加载小图
+用小的可缓存的favicon.ico
+
+cookie
+给cookie减肥
+清除不必要的cookie
+cookie尽可能小
+设置好合适的域
+合适的有效期
+把静态资源放在不含cookie的域下
+当浏览器发送对静态图像的请求时，cookie也会一起发送，而服务器根本不需要这些cookie。
+
+移动端
+保证所有组件都小于25K
+把组件打包到一个复合文档里
+
+服务器
+开启Gzip等压缩
+避免图片src属性为空（为空浏览器也会向服务器发送另一个请求）
+对Ajax用GET请求
+尽早清空缓冲区
+使用CDN（内容分发网络）
+内容分发网络（CDN）是一组分散在不同地理位置的web服务器，用来给用户更高效地发送内容
+</code></pre></div><h2 id="css优化"><a href="#css优化" aria-hidden="true" class="header-anchor">#</a> CSS优化</h2> <p>多个 css 合并，尽量减少 HTTP 请求</p> <p>css 雪碧图</p> <p>抽象提取公共样式，减少代码量</p> <p>选择器优化嵌套，尽量避免层级过深 （用‘&gt;’替换‘ ’）</p> <p>属性值为 0 时，不加单位</p> <p>压缩CSS代码</p> <p>避免使用 CSS 表达式</p> <p>它们要计算成千上万次并且可能会对你页面的性能产生影响。</p> <h2 id="首屏图片加载"><a href="#首屏图片加载" aria-hidden="true" class="header-anchor">#</a> 首屏图片加载</h2> <p><strong>预加载：</strong>
+就是事先把网页的图片加载到本地，之后就直接到缓存那里拿图片了。
+预加载分为有序加载和无序加载两种。</p> <h2 id="延迟加载（懒加载）"><a href="#延迟加载（懒加载）" aria-hidden="true" class="header-anchor">#</a> 延迟加载（懒加载）</h2> <p>原理：先用一张极小的图片来代替，等到内容加载完了，再向服务器请求真正的图片并替换，可以有效的减少等待时间。优先显示可视区域的图片而不一次性加载所有图片，当需要显示的时候再发送图片请求，避免打开网页时加载过多资源。</p> <p>优点：可以减少请求数(有可能不会去加载)或者延迟请求，减缓了服务器端的压力</p> <p>jquery的lazyload插件可以实现图片延迟加载的插件
+使用settimeout或setinterval进行延迟加载</p> <h2 id="服务器端渲染-用户首屏时间优化"><a href="#服务器端渲染-用户首屏时间优化" aria-hidden="true" class="header-anchor">#</a> 服务器端渲染.用户首屏时间优化</h2> <p>一、代码的足够简洁
+减少代码冗余，保持简洁的代码风格，这是作为一个网页程序员的必修，能同样实现一个效果的能用 css 就尽量不用 js，能用两行代码解决问题的就别写三行，这是最基础的一点。</p> <p>二、减少资源载入
+这里子凡所说的资源主要是指 js、css 文件，因为我知道现在很多的前端开发设计人员喜欢用各种开源的特效或者别人做好的效果，其中包括为了给网站添加几个图标就引入一个开源的图标字体库，为了某个特效又在引入几个 js 和 css 文件，这无形之中就为网站加重了“份量”。</p> <p>三、图片使用懒加载，视频或音频禁止自动播放
+还记得子凡曾在泪雪博客写过关于“图片懒加载是否会影响网站 SEO 优化”的文章，其中就说到过如何合理的使用图片懒加载技术提升用户体验而不影响网站优化，因为懒加载是为了防止页面一被打开就立即载入图片，这样就会占用网络带宽，从而影响网站的打开速度以及网站首屏的请求，所以非正文图片都是可以做懒加载的。</p> <p>图片是每个网站基本都少不了的东西，但是对于做视频、音频的站点来说，如果打开页面就自动播放，占用的网站带宽资源都更多了，所以这也是一个网站打开速度优化的一个小知识。</p> <p>四、使用 CDN 加速静态资源
+关于使用 CDN 加速是否影响网站优化的文章子凡也曾有过讨论，子凡对于网站整体做 CDN 加速还是有些不太认同，但是对于将网站静态资源做 CDN 加速镜像或者缓存优化却是非常认同的，例如将网站的 js、css、图片等文件做 CDN 加速是更有利于整个网站的加载和打开速度的。</p> <p>五、提升页面渲染速度
+将 CSS 样式写在头部样式表中，减少由 CSS 文件网络请求造成的渲染阻塞。</p> <p>将 JavaScript 放到文档末尾，或使用 async 方式加载，避免 JS 执行阻塞渲染。</p> <p>对非文字元素（如图片，视频）指定宽高，避免浏览器重排重绘。</p> <p>六、服务器本身的速度优化
+启用服务器 Gzip 压缩功能；</p> <p>开启数据库查询及页面缓存功能（如果是直接生成静态页面的网站可忽略）；</p> <p>升级或者保证服务器足够的网络带宽；</p> <p>开启网站缓存，充分利用本地缓存。</p> <p>同样随着网络安全的重视程度，如果你的网站已经安装 SSL 证书启用了 HTTPS 协议，那么你可以开启 HTTPS/2 或者 SPDY 这个功能，可以在某些程度上加速网站的打开。</p> <h2 id="性能优化的方法"><a href="#性能优化的方法" aria-hidden="true" class="header-anchor">#</a> 性能优化的方法</h2> <p>（1）减少http请求次数：CSS，Sprites, JS、CSS源码压缩、图片大小控制合适；网页Gzip，CDN托管，data缓存 ，图片服务器。</p> <p>（2）前端模板 JS+数据，减少由于HTML标签导致的带宽浪费，前端用变量保存AJAX请求结果，每次操作本地变量，不用请求，减少请求次数。</p> <p>（3）用innerHTML代替DOM操作，减少DOM操作次数，优化javascript性能。</p> <p>（4）当需要设置的样式很多时设置className而不是直接操作style。</p> <p>（5）少用全局变量、缓存DOM节点查找的结果。减少IO读取操作。</p> <p>（6）避免使用CSS Expression（css表达式)又称Dynamic properties(动态属性)。</p> <p>（7）图片预加载，将样式表放在顶部，将脚本放在底部 加上时间戳。</p></div> <div class="page-edit"><div class="edit-link"><a href="https://github.com/OFEII/OFEII-Note/edit/master/docs/note/optimize/optimize.md" target="_blank" rel="noopener noreferrer">编辑此页</a> <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></div> <!----></div> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/OFEII-Note/note/css/css1.html" class="prev">
+          CSS3 🎉 💯
+        </a></span> <span class="next"><a href="/OFEII-Note/note/html/html1.html">
+          HTML
+        </a>
+        →
+      </span></p></div> </div> <!----></div></div>
+    <script src="/OFEII-Note/assets/js/app.b2e57c85.js" defer></script><script src="/OFEII-Note/assets/js/37.51154014.js" defer></script>
+  </body>
+</html>

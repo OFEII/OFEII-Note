@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Promise | 💎OFEII Note</title>
+    <meta name="description" content="OFEII的笔记作品收藏等">
+    <link rel="icon" href="/OFEII-Note/home1.ico">
+  <link rel="manifest" href="/OFEII-Note/manifest.json">
+  <meta name="theme-color" content="#3eaf7c">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <link rel="apple-touch-icon" href="home1.ico">
+  <link rel="mask-icon" href="home1.ico" color="#3eaf7c">
+  <meta name="msapplication-TileImage" content="home1.ico">
+  <meta name="msapplication-TileColor" content="#000000">
+    
+    <link rel="preload" href="/OFEII-Note/assets/css/0.styles.35aa3fd2.css" as="style"><link rel="preload" href="/OFEII-Note/assets/js/app.b2e57c85.js" as="script"><link rel="preload" href="/OFEII-Note/assets/js/13.c652824f.js" as="script"><link rel="prefetch" href="/OFEII-Note/assets/js/10.857a1d9c.js"><link rel="prefetch" href="/OFEII-Note/assets/js/11.6fe75b28.js"><link rel="prefetch" href="/OFEII-Note/assets/js/12.6db9fd57.js"><link rel="prefetch" href="/OFEII-Note/assets/js/14.cee86c9a.js"><link rel="prefetch" href="/OFEII-Note/assets/js/15.95a8c1d6.js"><link rel="prefetch" href="/OFEII-Note/assets/js/16.f5e3f5fa.js"><link rel="prefetch" href="/OFEII-Note/assets/js/17.ac9d7db6.js"><link rel="prefetch" href="/OFEII-Note/assets/js/18.337d3dc3.js"><link rel="prefetch" href="/OFEII-Note/assets/js/19.094b16d0.js"><link rel="prefetch" href="/OFEII-Note/assets/js/2.aa6679b2.js"><link rel="prefetch" href="/OFEII-Note/assets/js/20.a7044630.js"><link rel="prefetch" href="/OFEII-Note/assets/js/21.f3973c76.js"><link rel="prefetch" href="/OFEII-Note/assets/js/22.15413560.js"><link rel="prefetch" href="/OFEII-Note/assets/js/23.0ac99f0d.js"><link rel="prefetch" href="/OFEII-Note/assets/js/24.1052dd90.js"><link rel="prefetch" href="/OFEII-Note/assets/js/25.658c7ace.js"><link rel="prefetch" href="/OFEII-Note/assets/js/26.adb4da0e.js"><link rel="prefetch" href="/OFEII-Note/assets/js/27.f46dba94.js"><link rel="prefetch" href="/OFEII-Note/assets/js/28.6162d905.js"><link rel="prefetch" href="/OFEII-Note/assets/js/29.e1c3eb22.js"><link rel="prefetch" href="/OFEII-Note/assets/js/3.9d4b450a.js"><link rel="prefetch" href="/OFEII-Note/assets/js/30.619c9e73.js"><link rel="prefetch" href="/OFEII-Note/assets/js/31.ccfba318.js"><link rel="prefetch" href="/OFEII-Note/assets/js/32.f7a54837.js"><link rel="prefetch" href="/OFEII-Note/assets/js/33.b2d4ba4a.js"><link rel="prefetch" href="/OFEII-Note/assets/js/34.b69a2c60.js"><link rel="prefetch" href="/OFEII-Note/assets/js/35.83eebef6.js"><link rel="prefetch" href="/OFEII-Note/assets/js/36.363e8987.js"><link rel="prefetch" href="/OFEII-Note/assets/js/37.51154014.js"><link rel="prefetch" href="/OFEII-Note/assets/js/38.13a66d58.js"><link rel="prefetch" href="/OFEII-Note/assets/js/39.b17b5b75.js"><link rel="prefetch" href="/OFEII-Note/assets/js/4.1dcb59de.js"><link rel="prefetch" href="/OFEII-Note/assets/js/40.2ff3a561.js"><link rel="prefetch" href="/OFEII-Note/assets/js/41.426cca0c.js"><link rel="prefetch" href="/OFEII-Note/assets/js/42.cd8b58b9.js"><link rel="prefetch" href="/OFEII-Note/assets/js/43.3238376e.js"><link rel="prefetch" href="/OFEII-Note/assets/js/44.5a068fe6.js"><link rel="prefetch" href="/OFEII-Note/assets/js/45.34fe6983.js"><link rel="prefetch" href="/OFEII-Note/assets/js/46.a215f544.js"><link rel="prefetch" href="/OFEII-Note/assets/js/5.793c30e9.js"><link rel="prefetch" href="/OFEII-Note/assets/js/6.84f5b1f0.js"><link rel="prefetch" href="/OFEII-Note/assets/js/7.ff55a58a.js"><link rel="prefetch" href="/OFEII-Note/assets/js/8.ca70a968.js"><link rel="prefetch" href="/OFEII-Note/assets/js/9.e15c6826.js">
+    <link rel="stylesheet" href="/OFEII-Note/assets/css/0.styles.35aa3fd2.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/OFEII-Note/" class="home-link router-link-active"><!----> <span class="site-name">💎OFEII Note</span></a> <div class="links" style="max-width:nullpx;"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/OFEII-Note/note/" class="nav-link router-link-active">🌳笔记</a></div><div class="nav-item"><a href="/OFEII-Note/demo/" class="nav-link">🍖作品</a></div><div class="nav-item"><a href="/OFEII-Note/collection/" class="nav-link">🍩收藏</a></div><div class="nav-item"><a href="/OFEII-Note/resume/" class="nav-link">😎resume</a></div> <a href="https://github.com/OFEII/OFEII-Note" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/OFEII-Note/note/" class="nav-link router-link-active">🌳笔记</a></div><div class="nav-item"><a href="/OFEII-Note/demo/" class="nav-link">🍖作品</a></div><div class="nav-item"><a href="/OFEII-Note/collection/" class="nav-link">🍩收藏</a></div><div class="nav-item"><a href="/OFEII-Note/resume/" class="nav-link">😎resume</a></div> <a href="https://github.com/OFEII/OFEII-Note" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <ul class="sidebar-links"><li><div class="sidebar-group first collapsable"><p class="sidebar-heading open"><span>JavaScript</span> <span class="arrow down"></span></p> <ul class="sidebar-group-items"><li><a href="/OFEII-Note/note/JavaScript/func.html" class="sidebar-link">函数</a></li><li><a href="/OFEII-Note/note/JavaScript/promise.html" class="active sidebar-link">Promise</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/OFEII-Note/note/JavaScript/promise.html#参数" class="sidebar-link">参数</a></li></ul></li><li><a href="/OFEII-Note/note/JavaScript/regexp.html" class="sidebar-link">正则表达式</a></li><li><a href="/OFEII-Note/note/JavaScript/proto.html" class="sidebar-link">对象原型链与继承</a></li></ul></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>CSS</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>性能优化</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>HTML</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>编程题</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>ES6</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>浏览器</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>VUE</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>WEB网络</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>算法排序</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>Node.js</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>Other</span> <span class="arrow right"></span></p> <!----></div></li></ul> </div> <div class="page"> <div class="content"><h1 id="promise"><a href="#promise" aria-hidden="true" class="header-anchor">#</a> Promise</h1> <h2 id="参数"><a href="#参数" aria-hidden="true" class="header-anchor">#</a> 参数</h2> <p>是函数，并且传入两个参数：resolve，reject，分别表示异步操作执行成功后的回调函数和异步操作执行失败后的回调函数。</p> <p>Promise 翻译过来就是承诺的意思，这个承诺会在未来有一个确切的答复，并且该承诺有三种状态，这个承诺一旦从等待状态变成为其他状态就永远不能更改状态了。
+等待中（pending）
+完成了（resolved）
+拒绝了（rejected）
+当我们在构造 Promise 的时候，构造函数内部的代码是立即执行的。</p> <div class="language-bash extra-class"><pre class="language-bash"><code>new Promise<span class="token punctuation">((</span>resolve, reject<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">{</span>
+  console.log<span class="token punctuation">(</span><span class="token string">'new Promise'</span><span class="token punctuation">)</span>
+  resolve<span class="token punctuation">(</span><span class="token string">'success'</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+console.log<span class="token punctuation">(</span><span class="token string">'finifsh'</span><span class="token punctuation">)</span>
+</code></pre></div><p>// 先打印new Promise， 再打印 finifsh
+Promise 实现了链式调用，也就是说每次调用 then 之后返回的都是一个 Promise，并且是一个全新的 Promise，原因也是因为状态不可变。如果你在 then 中 使用了 return，那么 return 的值会被 Promise.resolve() 包装。
+Promise.resolve(1)
+.then(res =&gt; {
+console.log(res) // =&gt; 1
+return 2 // 包装成 Promise.resolve(2)
+})
+.then(res =&gt; {
+console.log(res) // =&gt; 2
+})
+当然了，Promise 也很好地解决了回调地狱的问题
+ajax(url)
+.then(res =&gt; {
+console.log(res)
+return ajax(url1)
+}).then(res =&gt; {
+console.log(res)
+return ajax(url2)
+}).then(res =&gt; console.log(res))
+手写Promise
+先看看Promise是怎么用的
+new MyPromise((resolve, reject) =&gt; {
+setTimeout(() =&gt; {
+resolve(1)
+}, 0)
+}).then(value =&gt; {
+console.log(value)
+})
+在Promise的构造器中传入一个函数，这个函数有两个参数 resolve和reject，这两个参数都是Promise的回调函数，不需要自己写，在需要的时候调用就可以了，他们分别是成功的回调resolve和失败的回调reject。
+简易版 Promise
+第一步，先来搭建构建函数的大体框架
+const PENDING = 'pending'
+const RESOLVED = 'resolved'
+const REJECTED = 'rejected'</p> <p>function MyPromise(fn){
+const that = this
+that.state = PENDING
+that.value = null
+that.resolvedCallbacks = []
+that.rejectedCallbacks = []
+// 待完善 resolve 和 reject 函数
+// 待完善执行 fn 函数
+}
+首先创建三个常量用于表示状态，对于经常使用的一些值应该通过常量来管理，便于开发及后期维护
+在函数体内部首先创建常量that，因为代码可能会异步执行，用于获取正确的this对象
+一开始Promise的状态是 pending
+value 变量用于保存resolve或者reject中传入的值
+resolvedCallbacks和rejectedCallback用于保存then中的回调，因为当执行完Promise时状态可能还是等待中，这时候应该把then中的回调保存起来用于状态改变时使用
+第二步，完善resolve和reject函数，添加在 MyPromise 函数体内部
+function resolve(value) {
+if(that.state === PENDING) {
+that.state = RESOLVED
+that.value = value
+that.resolvedCallbacks.map(cb =&gt; cb(that.value))
+}
+}</p> <p>function reject(value) {
+if(that.state === PENDING){
+that.state = REJECTED
+that.value = value;
+that.rejectedCallbacks.map(cb =&gt; cb(that.value));
+}
+}
+首先两个函数都得判断当前状态是否为等待中，因为规范规定只有等待态才可以改变状态
+将当前状态更改为对应状态，并且将传入的值赋值给 value
+遍历回调数组并执行
+第四步，实现如何执行 Promise 中传入的函数了
+try {
+fn(resolve, reject)
+} catch (e) {
+reject(e)
+}
+实现很简单，执行传入的参数并且将之前两个函数当做参数传进去
+要注意的是，可能执行函数过程中会遇到错误，需要捕获错误并且执行 reject 函数
+第五步，实现较为复杂的 then 函数。
+then函数是在Promise构造器中成功状态下调用的resolve方法的回调。
+then函数是可以接收两个参数的，一个是用户自定义的成功处理，另一个是用户自定义的错误处理，第二个参数可不传。
+MyPromise.prototype.then = function(onFulfilled, onRejected) {
+const that = this
+//对传入的两个参数做判断，如果不是函数将其转为函数
+onFulfilled =
+typeof onFulfilled === 'function'
+? onFulfilled
+: v =&gt; v  // onFulfilled = v =&gt; v
+onRejected =
+typeof onRejected === 'function'
+? onRejected
+: r =&gt; {
+throw r
+}</p> <p>if(that.state === PENDING) {
+that.resolvedCallbacks.push(onFulfilled)
+that.rejectedCallbacks.push(onRejected)
+}
+else if(that.state === RESOLVED) {
+onFulfilled(that.value)
+}
+else {
+onRejected(that.value)
+}
+}
+首先判断两个参数是否为函数类型，因为这两个参数是可选参数
+当参数不是函数类型时，需要创建一个函数赋值给对应的参数，同时也实现了透传，比如如下代码
+// 该代码目前在简单版中会报错
+// 只是作为一个透传的例子
+Promise.resolve(4).then().then((value) =&gt; console.log(value))
+接下来就是一系列判断状态的逻辑，当状态不是等待态时，就去执行相对应的函数。如果状态是等待态的话，就往回调函数中 push 函数，比如如下代码就会进入等待态的逻辑</p></div> <div class="page-edit"><div class="edit-link"><a href="https://github.com/OFEII/OFEII-Note/edit/master/docs/note/JavaScript/promise.md" target="_blank" rel="noopener noreferrer">编辑此页</a> <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></div> <!----></div> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/OFEII-Note/note/JavaScript/func.html" class="prev">
+          函数
+        </a></span> <span class="next"><a href="/OFEII-Note/note/JavaScript/regexp.html">
+          正则表达式
+        </a>
+        →
+      </span></p></div> </div> <!----></div></div>
+    <script src="/OFEII-Note/assets/js/app.b2e57c85.js" defer></script><script src="/OFEII-Note/assets/js/13.c652824f.js" defer></script>
+  </body>
+</html>
